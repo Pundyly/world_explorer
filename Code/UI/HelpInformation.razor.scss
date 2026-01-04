@@ -1,0 +1,25 @@
+HelpInformation {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #00000000;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+	font-weight: bold;
+	border-radius: 20px;
+
+	.text {
+		background-color: rgba(0, 0, 0, 0.7);
+		border-radius: 20px;
+		font-size: 35px;
+		font-family: Poppins, sans-serif;
+		color: #fff;
+		margin: 20px;
+		padding: 10px 20px;
+		flex-direction: column;
+		gap: 10px;
+	}
+}

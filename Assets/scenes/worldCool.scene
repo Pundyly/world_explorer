@@ -1,0 +1,258 @@
+{
+  "__guid": "ccac8a6a-8a66-40cf-a7c4-5cc616e288d0",
+  "GameObjects": [
+    {
+      "__guid": "fce10278-4c6a-4062-8e96-9f722f97f32a",
+      "__version": 1,
+      "Flags": 0,
+      "Name": "Camera",
+      "Position": "0,0,0",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "maincamera",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "NetworkOrphaned": 0,
+      "NetworkTransmit": true,
+      "OwnerTransfer": 1,
+      "Components": [
+        {
+          "__type": "Sandbox.CameraComponent",
+          "__guid": "70c93b2a-aec4-42f7-b132-168d22fd21c6",
+          "__enabled": true,
+          "BackgroundColor": "0.33333,0.46275,0.52157,1",
+          "ClearFlags": "All",
+          "EnablePostProcessing": true,
+          "FieldOfView": 60,
+          "FovAxis": "Horizontal",
+          "IsMainCamera": true,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Orthographic": false,
+          "OrthographicHeight": 1204,
+          "PostProcessAnchor": null,
+          "Priority": 1,
+          "RenderExcludeTags": "",
+          "RenderTags": "",
+          "RenderTexture": null,
+          "TargetEye": "None",
+          "Viewport": "0,0,1,1",
+          "ZFar": 10000,
+          "ZNear": 10
+        }
+      ],
+      "Children": [
+        {
+          "__guid": "4fc0199e-bc5c-415b-be28-e8d40a0321e4",
+          "__version": 1,
+          "Flags": 0,
+          "Name": "Screen",
+          "Position": "0,0,0",
+          "Rotation": "0,0,0,1",
+          "Scale": "1,1,1",
+          "Tags": "",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "NetworkOrphaned": 0,
+          "NetworkTransmit": true,
+          "OwnerTransfer": 1,
+          "Components": [
+            {
+              "__type": "Sandbox.ScreenPanel",
+              "__guid": "5cac0629-7c1d-474a-946b-2890d883fb22",
+              "__enabled": true,
+              "AutoScreenScale": true,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "Opacity": 1,
+              "Scale": 1,
+              "ScaleStrategy": "ConsistentHeight",
+              "TargetCamera": null,
+              "ZIndex": 100
+            },
+            {
+              "__type": "Sandbox.UI.HelpInformation",
+              "__guid": "c1d0b15b-1e06-4e28-8096-cbdaeb0687a4",
+              "__enabled": true,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null
+            }
+          ],
+          "Children": []
+        }
+      ]
+    },
+    {
+      "__guid": "37a8b6c3-5413-4d55-a903-ca451bcc6987",
+      "__version": 1,
+      "Flags": 0,
+      "Name": "World",
+      "Position": "0,0,0",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "NetworkOrphaned": 0,
+      "NetworkTransmit": true,
+      "OwnerTransfer": 1,
+      "Components": [
+        {
+          "__type": "WorldMaker",
+          "__guid": "4d4ad01f-a1bb-41f4-87fb-b0497e8c277d",
+          "__enabled": true,
+          "CellSize": 40,
+          "Fe": "scenes/worldcool.scene",
+          "GridSize": 100,
+          "MaxHeight": 15,
+          "MeshMaterial": "lol/cor_stone.vmat",
+          "models": {
+            "_type": "gameobject",
+            "prefab": "prefabs/rndmdl.prefab"
+          },
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Power": 3,
+          "Scale": 2.4699998
+        }
+      ],
+      "Children": []
+    },
+    {
+      "__guid": "fa52eef5-5bc4-4d82-9974-e8551aef5956",
+      "__version": 1,
+      "Flags": 0,
+      "Name": "2D Skybox",
+      "Position": "-466.0852,389.1854,854.7598",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "skybox",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "NetworkOrphaned": 0,
+      "NetworkTransmit": true,
+      "OwnerTransfer": 1,
+      "Components": [
+        {
+          "__type": "Sandbox.SkyBox2D",
+          "__guid": "c86f2261-a630-41b0-a5af-a4714f08efa1",
+          "__enabled": true,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "SkyIndirectLighting": true,
+          "SkyMaterial": "materials/skybox/skybox_day_01.vmat",
+          "Tint": "1,1,1,1"
+        }
+      ],
+      "Children": []
+    },
+    {
+      "__guid": "5b5b857e-7f9b-491f-b7d7-0aece221ddea",
+      "__version": 1,
+      "Flags": 0,
+      "Name": "Sun",
+      "Position": "1251.15,1162.885,903.1979",
+      "Rotation": "-0.09904574,0.2391176,0.3696438,0.8923991",
+      "Scale": "1,1,1",
+      "Tags": "light_directional,light",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "NetworkOrphaned": 0,
+      "NetworkTransmit": true,
+      "OwnerTransfer": 1,
+      "Components": [
+        {
+          "__type": "Sandbox.DirectionalLight",
+          "__guid": "79aa54c0-4b49-4301-b92e-df779609f262",
+          "__enabled": true,
+          "FogMode": "Enabled",
+          "FogStrength": 1,
+          "LightColor": "0.91373,0.98039,1,1",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Shadows": true,
+          "SkyColor": "0,0,0,0"
+        }
+      ],
+      "Children": []
+    },
+    {
+      "__guid": "ef8f9f58-0e34-47b7-8cfd-157d98f0dfd4",
+      "__version": 1,
+      "__Prefab": "prefabs/networkhelper.prefab",
+      "__PrefabInstancePatch": {
+        "AddedObjects": [],
+        "RemovedObjects": [],
+        "PropertyOverrides": [
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "9e11ab61-44fe-4a5c-ae9e-8de2d6737f60"
+            },
+            "Property": "Position",
+            "Value": "1500,1500,500"
+          }
+        ],
+        "MovedObjects": []
+      },
+      "__PrefabIdToInstanceId": {
+        "9e11ab61-44fe-4a5c-ae9e-8de2d6737f60": "ef8f9f58-0e34-47b7-8cfd-157d98f0dfd4",
+        "75c1515b-5e3d-4f76-9e99-9439316223ce": "ede2f0ea-1a1e-49b6-9844-67283ef2aecb"
+      }
+    }
+  ],
+  "SceneProperties": {
+    "NetworkInterpolation": true,
+    "TimeScale": 1,
+    "WantsSystemScene": true,
+    "Metadata": {},
+    "NavMesh": {
+      "Enabled": false,
+      "IncludeStaticBodies": true,
+      "IncludeKeyframedBodies": true,
+      "EditorAutoUpdate": true,
+      "AgentHeight": 64,
+      "AgentRadius": 16,
+      "AgentStepSize": 18,
+      "AgentMaxSlope": 40,
+      "ExcludedBodies": "",
+      "IncludedBodies": ""
+    }
+  },
+  "ResourceVersion": 3,
+  "Title": null,
+  "Description": null,
+  "__references": [
+    "bananapeelsteam.cor_stone#43806"
+  ],
+  "__version": 3
+}

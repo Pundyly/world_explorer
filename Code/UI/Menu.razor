@@ -1,0 +1,77 @@
+@using Sandbox;
+@using Sandbox.UI;
+@inherits PanelComponent
+
+<style>
+	Hud {
+		pointer-events: all;
+	}
+	.title {
+		font-size: 25px;
+		font-family: Poppins;
+		color: #ffffff;
+		pointer-events: all;
+	}
+
+	.vital {
+		font-size: 25px;
+		font-family: Poppins;
+		color: #ffffff;
+		pointer-events: all;
+	}
+</style>
+
+<root class="menuforgame">
+	<div class="name">
+		World Explorer
+	</div>
+	<div class="vital">
+		<div class="button" onclick=@ClassicGame>
+			Play abstract maps
+		</div>
+		<div class="button" onclick=@RoguelikeGame>
+			Play minecampf like map
+		</div>
+		<div class="button" onclick=@Settings>
+			Settings
+		</div>
+		<div class="button" onclick=@QuitGame>
+			Quit
+		</div>
+	</div>
+	<div class="info">
+		<div class="Version">
+			v0.0.1
+		</div>
+		<div class="bywho">
+			Made by Banana Peels Team.
+		</div>
+	</div>
+
+
+</root>
+
+@code
+{
+	[Property] public SceneFile ClassicalScene, RoguelikeScene;
+	public void QuitGame()
+	{
+		Game.Close();
+	}
+	
+	public void ClassicGame()
+	{
+		Scene.Load(ClassicalScene);
+	}
+
+	public void RoguelikeGame()
+	{
+		Scene.Load(RoguelikeScene);
+	}
+
+	public void Settings()
+	{
+		Game.Overlay.ShowSettingsModal();
+	}
+	protected override int BuildHash() => System.HashCode.Combine( RealTime.Now.CeilToInt() );
+}

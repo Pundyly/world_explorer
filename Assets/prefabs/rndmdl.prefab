@@ -1,0 +1,117 @@
+{
+  "RootObject": {
+    "__guid": "92ee1a7b-d894-421f-9c1e-bbc3732d6eb3",
+    "__version": 1,
+    "Flags": 0,
+    "Name": "rndmdl",
+    "Position": "0,0,0",
+    "Rotation": "0,0,0,1",
+    "Scale": "1,1,1",
+    "Tags": "",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "NetworkInterpolation": true,
+    "NetworkOrphaned": 0,
+    "NetworkTransmit": true,
+    "OwnerTransfer": 1,
+    "Components": [
+      {
+        "__type": "Sandbox.ModelRenderer",
+        "__guid": "69b33332-691f-4fe4-b894-7010055c4f8c",
+        "__enabled": true,
+        "BodyGroups": 18446744073709551615,
+        "CreateAttachments": false,
+        "LodOverride": null,
+        "MaterialGroup": null,
+        "MaterialOverride": null,
+        "Materials": null,
+        "Model": null,
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "RenderOptions": {
+          "GameLayer": true,
+          "OverlayLayer": false,
+          "BloomLayer": false,
+          "AfterUILayer": false
+        },
+        "RenderType": "On",
+        "Tint": "1,1,1,1"
+      },
+      {
+        "__type": "RandomModel",
+        "__guid": "1f46e45f-f6a8-4678-addb-654a233ceae1",
+        "__enabled": true,
+        "models": [
+          "models/sbox_props/watermelon/watermelon.vmdl",
+          "models/props/couch/couch.vmdl",
+          "models/sbox_props/traffic_cone/traffic_cone.vmdl",
+          "models/sbox_props/oil_drum/oil_drum_explosive.vmdl",
+          "models/inugami_korone/inugami_korone.vmdl",
+          "models/skibiditerry/skibiditerry.vmdl",
+          "models/props/pizza/pizza.vmdl",
+          "models/props/trim_sheets/bookcase/bookcase_01.vmdl",
+          "models/sbox_props/pallet/pallet.vmdl"
+        ],
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null
+      },
+      {
+        "__type": "Item",
+        "__guid": "da267ed1-19fc-4bc5-8532-de509e3ec39e",
+        "__enabled": true,
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "Type": "None"
+      }
+    ],
+    "Children": [],
+    "__properties": {
+      "NetworkInterpolation": true,
+      "TimeScale": 1,
+      "WantsSystemScene": true,
+      "Metadata": {},
+      "NavMesh": {
+        "Enabled": false,
+        "IncludeStaticBodies": true,
+        "IncludeKeyframedBodies": true,
+        "EditorAutoUpdate": true,
+        "AgentHeight": 64,
+        "AgentRadius": 16,
+        "AgentStepSize": 18,
+        "AgentMaxSlope": 40,
+        "ExcludedBodies": "",
+        "IncludedBodies": ""
+      }
+    },
+    "__variables": []
+  },
+  "ResourceVersion": 2,
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "DontBreakAsTemplate": false,
+  "__references": [
+    "facepunch.bookcase01#80037",
+    "facepunch.couch#131736",
+    "facepunch.oildrumexplosive#126236",
+    "facepunch.pallet#108387",
+    "facepunch.pizza#28997",
+    "facepunch.traffic_cone#108392",
+    "facepunch.watermelon#90057",
+    "okato.inugami_korone#42005",
+    "turd.terry_skibidi#73689"
+  ],
+  "__version": 2
+}
