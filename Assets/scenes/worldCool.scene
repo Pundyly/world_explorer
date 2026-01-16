@@ -3,7 +3,7 @@
   "GameObjects": [
     {
       "__guid": "fce10278-4c6a-4062-8e96-9f722f97f32a",
-      "__version": 1,
+      "__version": 2,
       "Flags": 0,
       "Name": "Camera",
       "Position": "0,0,0",
@@ -12,7 +12,7 @@
       "Tags": "maincamera",
       "Enabled": true,
       "NetworkMode": 2,
-      "NetworkInterpolation": true,
+      "NetworkFlags": 0,
       "NetworkOrphaned": 0,
       "NetworkTransmit": true,
       "OwnerTransfer": 1,
@@ -21,6 +21,7 @@
           "__type": "Sandbox.CameraComponent",
           "__guid": "70c93b2a-aec4-42f7-b132-168d22fd21c6",
           "__enabled": true,
+          "Flags": 0,
           "BackgroundColor": "0.33333,0.46275,0.52157,1",
           "ClearFlags": "All",
           "EnablePostProcessing": true,
@@ -46,100 +47,11 @@
           "ZNear": 10
         }
       ],
-      "Children": [
-        {
-          "__guid": "4fc0199e-bc5c-415b-be28-e8d40a0321e4",
-          "__version": 1,
-          "Flags": 0,
-          "Name": "Screen",
-          "Position": "0,0,0",
-          "Rotation": "0,0,0,1",
-          "Scale": "1,1,1",
-          "Tags": "",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
-          "NetworkOrphaned": 0,
-          "NetworkTransmit": true,
-          "OwnerTransfer": 1,
-          "Components": [
-            {
-              "__type": "Sandbox.ScreenPanel",
-              "__guid": "5cac0629-7c1d-474a-946b-2890d883fb22",
-              "__enabled": true,
-              "AutoScreenScale": true,
-              "OnComponentDestroy": null,
-              "OnComponentDisabled": null,
-              "OnComponentEnabled": null,
-              "OnComponentFixedUpdate": null,
-              "OnComponentStart": null,
-              "OnComponentUpdate": null,
-              "Opacity": 1,
-              "Scale": 1,
-              "ScaleStrategy": "ConsistentHeight",
-              "TargetCamera": null,
-              "ZIndex": 100
-            },
-            {
-              "__type": "Sandbox.UI.HelpInformation",
-              "__guid": "c1d0b15b-1e06-4e28-8096-cbdaeb0687a4",
-              "__enabled": true,
-              "OnComponentDestroy": null,
-              "OnComponentDisabled": null,
-              "OnComponentEnabled": null,
-              "OnComponentFixedUpdate": null,
-              "OnComponentStart": null,
-              "OnComponentUpdate": null
-            }
-          ],
-          "Children": []
-        }
-      ]
-    },
-    {
-      "__guid": "37a8b6c3-5413-4d55-a903-ca451bcc6987",
-      "__version": 1,
-      "Flags": 0,
-      "Name": "World",
-      "Position": "0,0,0",
-      "Rotation": "0,0,0,1",
-      "Scale": "1,1,1",
-      "Tags": "",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkInterpolation": true,
-      "NetworkOrphaned": 0,
-      "NetworkTransmit": true,
-      "OwnerTransfer": 1,
-      "Components": [
-        {
-          "__type": "WorldMaker",
-          "__guid": "4d4ad01f-a1bb-41f4-87fb-b0497e8c277d",
-          "__enabled": true,
-          "CellSize": 40,
-          "Fe": "scenes/worldcool.scene",
-          "GridSize": 100,
-          "MaxHeight": 15,
-          "MeshMaterial": "lol/cor_stone.vmat",
-          "models": {
-            "_type": "gameobject",
-            "prefab": "prefabs/rndmdl.prefab"
-          },
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "Power": 3,
-          "Scale": 2.4699998
-        }
-      ],
       "Children": []
     },
     {
       "__guid": "fa52eef5-5bc4-4d82-9974-e8551aef5956",
-      "__version": 1,
+      "__version": 2,
       "Flags": 0,
       "Name": "2D Skybox",
       "Position": "-466.0852,389.1854,854.7598",
@@ -148,7 +60,7 @@
       "Tags": "skybox",
       "Enabled": true,
       "NetworkMode": 2,
-      "NetworkInterpolation": true,
+      "NetworkFlags": 0,
       "NetworkOrphaned": 0,
       "NetworkTransmit": true,
       "OwnerTransfer": 1,
@@ -157,6 +69,7 @@
           "__type": "Sandbox.SkyBox2D",
           "__guid": "c86f2261-a630-41b0-a5af-a4714f08efa1",
           "__enabled": true,
+          "Flags": 0,
           "OnComponentDestroy": null,
           "OnComponentDisabled": null,
           "OnComponentEnabled": null,
@@ -172,7 +85,7 @@
     },
     {
       "__guid": "5b5b857e-7f9b-491f-b7d7-0aece221ddea",
-      "__version": 1,
+      "__version": 2,
       "Flags": 0,
       "Name": "Sun",
       "Position": "1251.15,1162.885,903.1979",
@@ -181,7 +94,7 @@
       "Tags": "light_directional,light",
       "Enabled": true,
       "NetworkMode": 2,
-      "NetworkInterpolation": true,
+      "NetworkFlags": 0,
       "NetworkOrphaned": 0,
       "NetworkTransmit": true,
       "OwnerTransfer": 1,
@@ -190,6 +103,7 @@
           "__type": "Sandbox.DirectionalLight",
           "__guid": "79aa54c0-4b49-4301-b92e-df779609f262",
           "__enabled": true,
+          "Flags": 0,
           "FogMode": "Enabled",
           "FogStrength": 1,
           "LightColor": "0.91373,0.98039,1,1",
@@ -207,7 +121,7 @@
     },
     {
       "__guid": "ef8f9f58-0e34-47b7-8cfd-157d98f0dfd4",
-      "__version": 1,
+      "__version": 2,
       "__Prefab": "prefabs/networkhelper.prefab",
       "__PrefabInstancePatch": {
         "AddedObjects": [],
@@ -218,8 +132,16 @@
               "Type": "GameObject",
               "IdValue": "9e11ab61-44fe-4a5c-ae9e-8de2d6737f60"
             },
+            "Property": "Flags",
+            "Value": 0
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "9e11ab61-44fe-4a5c-ae9e-8de2d6737f60"
+            },
             "Property": "Position",
-            "Value": "1500,1500,500"
+            "Value": "0,0,1755.501"
           }
         ],
         "MovedObjects": []
@@ -228,6 +150,40 @@
         "9e11ab61-44fe-4a5c-ae9e-8de2d6737f60": "ef8f9f58-0e34-47b7-8cfd-157d98f0dfd4",
         "75c1515b-5e3d-4f76-9e99-9439316223ce": "ede2f0ea-1a1e-49b6-9844-67283ef2aecb"
       }
+    },
+    {
+      "__guid": "2059295f-c558-4240-b95a-fab98dee5fa4",
+      "__version": 2,
+      "Flags": 0,
+      "Name": "WorldManager",
+      "Position": "-80.3325,-39.35521,112.972",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkFlags": 0,
+      "NetworkOrphaned": 0,
+      "NetworkTransmit": true,
+      "OwnerTransfer": 1,
+      "Components": [
+        {
+          "__type": "WorldManager",
+          "__guid": "6e3a4610-8c0f-414c-9a1d-f4ba35328afe",
+          "__enabled": true,
+          "Flags": 0,
+          "BlockMat": "lol/cor_grass.vmat",
+          "BlockScale": 24,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "RenderDistance": 4
+        }
+      ],
+      "Children": []
     }
   ],
   "SceneProperties": {
@@ -252,7 +208,7 @@
   "Title": null,
   "Description": null,
   "__references": [
-    "bananapeelsteam.cor_stone#43806"
+    "bananapeelsteam.cor_grass#43804"
   ],
   "__version": 3
 }

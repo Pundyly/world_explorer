@@ -46,62 +46,14 @@
           "ZNear": 10
         }
       ],
-      "Children": [
-        {
-          "__guid": "c32e1610-1e95-45df-99a6-d8b8a9357bbf",
-          "__version": 1,
-          "Flags": 0,
-          "Name": "Screen",
-          "Position": "0,0,0",
-          "Rotation": "0,0,0,1",
-          "Scale": "1,1,1",
-          "Tags": "",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
-          "NetworkOrphaned": 0,
-          "NetworkTransmit": true,
-          "OwnerTransfer": 1,
-          "Components": [
-            {
-              "__type": "Sandbox.ScreenPanel",
-              "__guid": "54d94d59-5358-4bd7-b918-3e2624e7fd5e",
-              "__enabled": true,
-              "AutoScreenScale": true,
-              "OnComponentDestroy": null,
-              "OnComponentDisabled": null,
-              "OnComponentEnabled": null,
-              "OnComponentFixedUpdate": null,
-              "OnComponentStart": null,
-              "OnComponentUpdate": null,
-              "Opacity": 1,
-              "Scale": 1,
-              "ScaleStrategy": "ConsistentHeight",
-              "TargetCamera": null,
-              "ZIndex": 100
-            },
-            {
-              "__type": "Sandbox.UI.HelpInformation",
-              "__guid": "f32d885a-bd78-4237-9bec-29eaa41b79a9",
-              "__enabled": true,
-              "OnComponentDestroy": null,
-              "OnComponentDisabled": null,
-              "OnComponentEnabled": null,
-              "OnComponentFixedUpdate": null,
-              "OnComponentStart": null,
-              "OnComponentUpdate": null
-            }
-          ],
-          "Children": []
-        }
-      ]
+      "Children": []
     },
     {
       "__guid": "669e74cc-80db-417a-93f4-a14abd744151",
       "__version": 1,
       "Flags": 0,
       "Name": "WorldCreator",
-      "Position": "-60063.5,0,0",
+      "Position": "0,0,0",
       "Rotation": "0,0,0,1",
       "Scale": "1,1,1",
       "Tags": "skybox",
@@ -145,7 +97,15 @@
             "materials/skybox/skybox_studio_02.vmat",
             "materials/skybox/skybox_sunrise_01.vmat",
             "materials/skybox/skybox_workshop.vmat"
-          ]
+          ],
+          "txts": {
+            "_type": "gameobject",
+            "prefab": "prefabs/txt.prefab"
+          },
+          "wobblys": {
+            "_type": "gameobject",
+            "prefab": "prefabs/wobbly.prefab"
+          }
         }
       ],
       "Children": []
@@ -250,7 +210,7 @@
               "IdValue": "9e11ab61-44fe-4a5c-ae9e-8de2d6737f60"
             },
             "Property": "Position",
-            "Value": "-151.0629,48.02899,251.8271"
+            "Value": "0,0,7176.208"
           }
         ],
         "MovedObjects": []

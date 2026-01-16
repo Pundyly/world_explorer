@@ -1,0 +1,43 @@
+{
+  "RootObject": {
+    "__guid": "6564af15-6476-4519-82ef-f48629d8650f",
+    "__version": 2,
+    "Flags": 0,
+    "Name": "Chunk",
+    "Position": "0,0,0",
+    "Rotation": "0,0,0,1",
+    "Scale": "1,1,1",
+    "Tags": "",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "NetworkFlags": 0,
+    "NetworkOrphaned": 0,
+    "NetworkTransmit": true,
+    "OwnerTransfer": 1,
+    "Components": [
+      {
+        "__type": "Chunk",
+        "__guid": "95f0c701-195e-481c-b034-b6389bc3face",
+        "__enabled": true,
+        "Flags": 0,
+        "BlockMaterial": "lol/cor_grass.vmat",
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null
+      }
+    ],
+    "Children": []
+  },
+  "ResourceVersion": 2,
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "DontBreakAsTemplate": false,
+  "__references": [
+    "bananapeelsteam.cor_grass#43804"
+  ],
+  "__version": 2
+}

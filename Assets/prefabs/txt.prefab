@@ -1,0 +1,102 @@
+{
+  "RootObject": {
+    "__guid": "3ec0f197-ad82-42b7-ab95-e0bbe0367c0c",
+    "__version": 1,
+    "Flags": 0,
+    "Name": "txt",
+    "Position": "0,0,0",
+    "Rotation": "0,0,0,1",
+    "Scale": "1,1,1",
+    "Tags": "",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "NetworkInterpolation": true,
+    "NetworkOrphaned": 0,
+    "NetworkTransmit": true,
+    "OwnerTransfer": 1,
+    "Components": [
+      {
+        "__type": "RandomText",
+        "__guid": "b2b4cc6d-705a-4d81-8808-7e6d14060695",
+        "__enabled": true,
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "text": {
+          "_type": "component",
+          "component_id": "d5562eaf-bb33-4b92-9429-2124dcb55b59",
+          "go": "3ec0f197-ad82-42b7-ab95-e0bbe0367c0c",
+          "component_type": "TextRenderer"
+        }
+      },
+      {
+        "__type": "Sandbox.TextRenderer",
+        "__guid": "d5562eaf-bb33-4b92-9429-2124dcb55b59",
+        "__enabled": true,
+        "__version": 2,
+        "BlendMode": "Normal",
+        "FogStrength": 1,
+        "HorizontalAlignment": "Center",
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "RenderOptions": {
+          "GameLayer": true,
+          "OverlayLayer": false,
+          "BloomLayer": false,
+          "AfterUILayer": false
+        },
+        "Scale": 0.68217057,
+        "TextScope": {
+          "Text": "Hello! ❤",
+          "TextColor": "1,1,1,1",
+          "FontName": "Poppins",
+          "FontSize": 32,
+          "FontWeight": 400,
+          "FontItalic": false,
+          "LineHeight": 1,
+          "LetterSpacing": 0,
+          "WordSpacing": 0,
+          "FilterMode": "Bilinear",
+          "Outline": {
+            "Enabled": false,
+            "Size": 4,
+            "Color": "0,0,1,1"
+          },
+          "Shadow": {
+            "Enabled": false,
+            "Size": 4,
+            "Color": "0,0,0,1",
+            "Offset": "4,4"
+          },
+          "OutlineUnder": {
+            "Enabled": false,
+            "Size": 4,
+            "Color": "0,1,0,1"
+          },
+          "ShadowUnder": {
+            "Enabled": false,
+            "Size": 4,
+            "Color": "0,0,0,1",
+            "Offset": "4,4"
+          }
+        },
+        "VerticalAlignment": "Center"
+      }
+    ],
+    "Children": []
+  },
+  "ResourceVersion": 2,
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "DontBreakAsTemplate": false,
+  "__references": [],
+  "__version": 2
+}

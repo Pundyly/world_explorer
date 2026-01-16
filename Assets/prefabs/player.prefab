@@ -3,7 +3,7 @@
     "__guid": "41819cd9-9179-4ef8-95b0-32f935169c95",
     "__version": 1,
     "Flags": 0,
-    "Name": "Player",
+    "Name": "player",
     "Position": "0,0,0",
     "Rotation": "0,0,0,1",
     "Scale": "1,1,1",
@@ -197,7 +197,7 @@
         "dist": 50,
         "helper": {
           "_type": "gameobject",
-          "go": "c32e1610-1e95-45df-99a6-d8b8a9357bbf"
+          "go": "5778d802-4240-4fa0-b603-f439b9db7753"
         },
         "ItemInHands": null,
         "OnComponentDestroy": null,
@@ -355,8 +355,74 @@
           }
         ],
         "Children": []
+      },
+      {
+        "__guid": "5778d802-4240-4fa0-b603-f439b9db7753",
+        "__version": 1,
+        "Flags": 0,
+        "Name": "Screen",
+        "Position": "0,0,0",
+        "Rotation": "0,0,0,1",
+        "Scale": "1,1,1",
+        "Tags": "hlp",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "NetworkOrphaned": 0,
+        "NetworkTransmit": true,
+        "OwnerTransfer": 1,
+        "Components": [
+          {
+            "__type": "Sandbox.ScreenPanel",
+            "__guid": "7036718e-1ed4-482f-8829-8abc6dbcf3ad",
+            "__enabled": true,
+            "AutoScreenScale": true,
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null,
+            "Opacity": 1,
+            "Scale": 1,
+            "ScaleStrategy": "ConsistentHeight",
+            "TargetCamera": null,
+            "ZIndex": 100
+          },
+          {
+            "__type": "Sandbox.UI.HelpInformation",
+            "__guid": "ee69578c-1419-4873-98a5-9fab2efeb707",
+            "__enabled": true,
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null
+          }
+        ],
+        "Children": []
       }
-    ]
+    ],
+    "__properties": {
+      "NetworkInterpolation": true,
+      "TimeScale": 1,
+      "WantsSystemScene": true,
+      "Metadata": {},
+      "NavMesh": {
+        "Enabled": false,
+        "IncludeStaticBodies": true,
+        "IncludeKeyframedBodies": true,
+        "EditorAutoUpdate": true,
+        "AgentHeight": 64,
+        "AgentRadius": 16,
+        "AgentStepSize": 18,
+        "AgentMaxSlope": 40,
+        "ExcludedBodies": "",
+        "IncludedBodies": ""
+      }
+    },
+    "__variables": []
   },
   "ResourceVersion": 2,
   "ShowInMenu": false,
