@@ -3,7 +3,7 @@
   "GameObjects": [
     {
       "__guid": "711dfe90-57af-4b8d-a800-15e445e36dd1",
-      "__version": 1,
+      "__version": 2,
       "Flags": 0,
       "Name": "Camera",
       "Position": "0,0,0",
@@ -12,7 +12,7 @@
       "Tags": "maincamera",
       "Enabled": true,
       "NetworkMode": 2,
-      "NetworkInterpolation": true,
+      "NetworkFlags": 0,
       "NetworkOrphaned": 0,
       "NetworkTransmit": true,
       "OwnerTransfer": 1,
@@ -21,6 +21,7 @@
           "__type": "Sandbox.CameraComponent",
           "__guid": "a58446f7-738a-42fa-ba7b-d40e96091ddf",
           "__enabled": true,
+          "Flags": 0,
           "BackgroundColor": "0.33333,0.46275,0.52157,1",
           "ClearFlags": "All",
           "EnablePostProcessing": true,
@@ -50,7 +51,7 @@
     },
     {
       "__guid": "669e74cc-80db-417a-93f4-a14abd744151",
-      "__version": 1,
+      "__version": 2,
       "Flags": 0,
       "Name": "WorldCreator",
       "Position": "0,0,0",
@@ -59,7 +60,7 @@
       "Tags": "skybox",
       "Enabled": true,
       "NetworkMode": 2,
-      "NetworkInterpolation": true,
+      "NetworkFlags": 0,
       "NetworkOrphaned": 0,
       "NetworkTransmit": true,
       "OwnerTransfer": 1,
@@ -68,6 +69,7 @@
           "__type": "WorldCreator",
           "__guid": "c459dc62-e9e5-42db-b4d6-9c212dbd62e0",
           "__enabled": true,
+          "Flags": 0,
           "empty": {
             "_type": "gameobject",
             "prefab": "prefabs/empty.prefab"
@@ -97,22 +99,14 @@
             "materials/skybox/skybox_studio_02.vmat",
             "materials/skybox/skybox_sunrise_01.vmat",
             "materials/skybox/skybox_workshop.vmat"
-          ],
-          "txts": {
-            "_type": "gameobject",
-            "prefab": "prefabs/txt.prefab"
-          },
-          "wobblys": {
-            "_type": "gameobject",
-            "prefab": "prefabs/wobbly.prefab"
-          }
+          ]
         }
       ],
       "Children": []
     },
     {
       "__guid": "d399061b-81f8-427f-907c-cdebf94e7a46",
-      "__version": 1,
+      "__version": 2,
       "Flags": 0,
       "Name": "Cube",
       "Position": "0,0,-3381.443",
@@ -121,7 +115,7 @@
       "Tags": "",
       "Enabled": true,
       "NetworkMode": 2,
-      "NetworkInterpolation": true,
+      "NetworkFlags": 0,
       "NetworkOrphaned": 0,
       "NetworkTransmit": true,
       "OwnerTransfer": 1,
@@ -130,6 +124,7 @@
           "__type": "Sandbox.ModelRenderer",
           "__guid": "62ef6a5e-552b-4307-845e-071416b25d73",
           "__enabled": true,
+          "Flags": 0,
           "BodyGroups": 18446744073709551615,
           "CreateAttachments": false,
           "LodOverride": null,
@@ -156,6 +151,7 @@
           "__type": "Sandbox.BoxCollider",
           "__guid": "784654d1-f3be-474b-a764-3b96ebdf7b80",
           "__enabled": true,
+          "Flags": 0,
           "Center": "0,0,0",
           "ColliderFlags": 0,
           "Elasticity": null,
@@ -182,7 +178,7 @@
     },
     {
       "__guid": "66b70525-2e6c-40d0-bf5a-efd1a81132d1",
-      "__version": 1,
+      "__version": 2,
       "__Prefab": "prefabs/networkhelper.prefab",
       "__PrefabInstancePatch": {
         "AddedObjects": [],
@@ -236,7 +232,19 @@
       "AgentStepSize": 18,
       "AgentMaxSlope": 40,
       "ExcludedBodies": "",
-      "IncludedBodies": ""
+      "IncludedBodies": "",
+      "CustomBounds": false,
+      "Bounds": {
+        "Mins": "0,0,0",
+        "Maxs": "0,0,0"
+      }
+    },
+    "GameObjectSystems": {
+      "Sandbox.Clutter.ClutterGridSystem": {
+        "Storage": {
+          "$blob": "74a16dd4-360f-4d4f-8ca4-39522014acfe"
+        }
+      }
     }
   },
   "ResourceVersion": 3,
